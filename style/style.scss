@@ -1,0 +1,261 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #F3F3F3;
+}
+
+
+
+
+.section__form{
+
+    width: 100%;
+    padding-top: 100px;
+
+    @media screen and (max-width: 650px) {
+        padding-top: 30px;
+    }
+
+
+    & .container{
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 0px 20px;
+    }
+
+    & .form{    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+
+        @media screen and (max-width: 850px) {
+           width: 100%;
+            padding: 50px 0px;
+        }
+
+    
+        &__center{
+            display: flex;
+           align-items: center;
+           justify-content: space-between;
+           width: 100%;
+           gap: 50px;
+           margin-top: 100px;
+           margin-bottom: 100px;
+           border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+
+           @media screen and (max-width: 650px) {
+            display: block;
+            gap: 0;
+            margin-top: 0px;
+            margin-bottom: 50px;
+        }
+
+        }
+
+
+        &__three1{
+            color: #1877EE;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 50px;
+            text-align: center;
+
+            white-space: nowrap;
+
+            
+            @media screen and (max-width: 992px) {
+                font-size: 20px;
+            }
+
+
+            @media screen and (max-width: 650px) {
+                font-size: 18px;
+                margin: 0;
+            }
+        }
+
+        
+        &__three{
+            color: #000000;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 50px;
+            text-align: center;
+            padding-right: 15px;
+            white-space: nowrap;
+
+            @media screen and (max-width: 992px) {
+                font-size: 20px;
+            }
+            @media screen and (max-width: 650px) {
+                font-size: 18px;
+                margin: 0;
+            }
+        }
+
+    
+
+
+        &__info{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            @media screen and (max-width: 850px) {
+                flex-direction: column;
+             }
+
+            &__item{
+
+                display: flex;
+                flex-direction: column;
+                flex: 0 1 45%;
+
+                
+            @media screen and (max-width: 850px) {
+                max-width: 100%;
+                flex: 0 0 100%;
+     
+             }
+
+                
+
+                &_blue{
+                    padding: 10px 0;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 20px;
+                    color: #1877EE;
+                    cursor: pointer;
+                    margin: 0;
+
+                    &:hover{
+                        color: #0e52a4;
+                        transition: ease-in-out .4s;
+                    }
+
+                }
+                &_part{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    padding: 10px 0;
+                    color: #000000;
+                    margin: 0;
+
+                    @media screen and (max-width: 850px) {
+                        gap: 0px;
+                        min-width: 100%;
+                        margin: 0 auto;
+                     }  
+                }
+               
+                &_switcher{
+                    margin-top: 90px;
+
+                    
+                    @media screen and (max-width: 480px) {
+                        margin-top: 30px;
+                     }  
+
+
+
+                    &_resume{
+                        padding-left: 5px;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        color: #000000;
+                    }
+                }
+                //start of switcher    
+                input[type=checkbox]{
+                    height: 0;
+                    width: 0;
+                    visibility: hidden;
+                  }
+                  
+                  label {
+                    cursor: pointer;
+                    text-indent: -9999px;
+                    width: 60px;
+                    height: 15px;
+                    background: grey;
+                    display: block;
+                    border-radius: 100px;
+                    position: relative;
+                  }
+                  
+                  label:after {
+                    content: '';
+                    position: absolute;
+                    top: 2px;
+                    left: 5px;
+                    width: 12px;
+                    height: 12px;
+                    background: #fd3b3b;
+                    border-radius: 90px;
+                    transition: 0.3s;
+                  }
+                 
+                  
+                  input:checked + label:after {
+                    left: calc(100% - 5px);
+                    transform: translateX(-100%);
+                  }
+                  
+                  label:active:after {
+                    width: 50px;
+                  }
+
+                  //end of switcher                  
+                
+            }
+
+            
+        }
+
+        &__title{
+            
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 72px;
+            line-height: 83px;
+            text-align: center;
+            color: #000000;
+            margin: 0 auto;
+
+            
+        @media screen and (max-width: 700px) {
+            font-size: 40px;
+
+        }
+
+        }                 
+            
+        }
+
+
+        
+
+ }
+
+
+
+
+
+
